@@ -1,4 +1,4 @@
-let myarry = ['a','b','vdds','jdcbdsj','ghvfyhivgb','cbsvhivb']
+let myarry = ['a','b','vdds','ghvfyhivgb','jdcbdsj','cbsvhivb']
 console.log(myarry);
 //add in end
 let arrup =myarry
@@ -23,5 +23,11 @@ console.log(arrup.length);
 // change specific values
 arrup[0] = 'mee'
 console.log(arrup);
+//check indexvalue
+console.log(arrup.indexOf('mee'));//exist on index 0   
+console.log(arrup.indexOf('pop'));//doesnt exist value -1
+//reverse the array
+console.log(arrup.reverse());
+//sort array according to alphabetical order
+console.log(myarry.sort());
 //
-
