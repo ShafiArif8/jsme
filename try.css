@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.main {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.g {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px 80px;
+}
+
+.bg {
+    background: linear-gradient(90deg, rgb(128, 7, 53), rgb(102, 5, 65), rgb(233, 208, 208), rgb(155, 12, 12));
+    animation-name: new;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.fg {
+    background: linear-gradient(90deg, rgba(128, 7, 53, 0.534), rgba(102, 5, 65, 0.438), rgba(233, 208, 208, 0.411), rgba(155, 12, 12, 0.438));
+    animation-name: new2;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes new {
+    0% {
+        border-radius: 100px 80px 100px 80px;
+    transform: rotate(0);
+
+    }
+
+    40% {
+        border-radius: 80px 100px 100px 100px;
+        transform: rotate(-90deg) scale(1.5);
+    }
+    80%{
+        border-radius: 80px 100px 60px 100px;
+        transform: rotate(-180deg) scale(1);
+    }
+    100%{
+        border-radius: 80px 70px 50px 70px;
+        transform: rotate(-60deg) scale(1.8);
+    }
+
+}
+@keyframes new2 {
+    0% {
+        border-radius: 80px 70px 50px 70px;
+        transform: rotate(0deg);
+    }
+    
+    40% {
+        border-radius: 80px 100px 100px 100px;
+        transform: rotate(90deg) scale(1.8);
+    }
+    80%{
+        border-radius: 80px 100px 100px 100px;
+        transform: rotate(180deg) scale(1.5);
+    }
+    100%{
+        border-radius: 100px 80px 100px 80px;
+        transform: rotate(60deg) scale(1);
+
+    }
+
+}
